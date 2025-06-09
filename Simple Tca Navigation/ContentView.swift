@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Simple Tca Navigation
-//
-//  Created by dwi prasetyo on 10/06/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {

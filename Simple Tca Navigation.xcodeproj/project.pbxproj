@@ -3,8 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 90;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		FB58BA1E2DF77A7C00607024 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FB58BA1D2DF77A7C00607024 /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB58BA0E2DF779A800607024 /* Simple Tca Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Tca Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +25,9 @@
 /* Begin PBXFrameworksBuildPhase section */
 		FB58BA0B2DF779A800607024 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
+				FB58BA1E2DF77A7C00607024 /* ComposableArchitecture in Frameworks */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -35,7 +38,10 @@
 				FB58BA102DF779A800607024 /* Simple Tca Navigation */,
 				FB58BA0F2DF779A800607024 /* Products */,
 			);
+			indentWidth = 3;
 			sourceTree = "<group>";
+			tabWidth = 3;
+			usesTabs = 1;
 		};
 		FB58BA0F2DF779A800607024 /* Products */ = {
 			isa = PBXGroup;
@@ -58,13 +64,12 @@
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			fileSystemSynchronizedGroups = (
 				FB58BA102DF779A800607024 /* Simple Tca Navigation */,
 			);
 			name = "Simple Tca Navigation";
 			packageProductDependencies = (
+				FB58BA1D2DF77A7C00607024 /* ComposableArchitecture */,
 			);
 			productName = "Simple Tca Navigation";
 			productReference = FB58BA0E2DF779A800607024 /* Simple Tca Navigation.app */;
@@ -94,7 +99,10 @@
 			);
 			mainGroup = FB58BA052DF779A800607024;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
+			packageReferences = (
+				FB58BA1C2DF77A7C00607024 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			preferredProjectObjectVersion = 90;
 			productRefGroup = FB58BA0F2DF779A800607024 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -107,25 +115,21 @@
 /* Begin PBXResourcesBuildPhase section */
 		FB58BA0C2DF779A800607024 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FB58BA0A2DF779A800607024 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FB58BA172DF779A900607024 /* Debug */ = {
+		FB58BA172DF779A900607024 /* Debug configuration for PBXProject "Simple Tca Navigation" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -189,7 +193,7 @@
 			};
 			name = Debug;
 		};
-		FB58BA182DF779A900607024 /* Release */ = {
+		FB58BA182DF779A900607024 /* Release configuration for PBXProject "Simple Tca Navigation" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -246,7 +250,7 @@
 			};
 			name = Release;
 		};
-		FB58BA1A2DF779A900607024 /* Debug */ = {
+		FB58BA1A2DF779A900607024 /* Debug configuration for PBXNativeTarget "Simple Tca Navigation" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -274,7 +278,7 @@
 			};
 			name = Debug;
 		};
-		FB58BA1B2DF779A900607024 /* Release */ = {
+		FB58BA1B2DF779A900607024 /* Release configuration for PBXNativeTarget "Simple Tca Navigation" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -308,22 +312,39 @@
 		FB58BA092DF779A800607024 /* Build configuration list for PBXProject "Simple Tca Navigation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB58BA172DF779A900607024 /* Debug */,
-				FB58BA182DF779A900607024 /* Release */,
+				FB58BA172DF779A900607024 /* Debug configuration for PBXProject "Simple Tca Navigation" */,
+				FB58BA182DF779A900607024 /* Release configuration for PBXProject "Simple Tca Navigation" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		FB58BA192DF779A900607024 /* Build configuration list for PBXNativeTarget "Simple Tca Navigation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB58BA1A2DF779A900607024 /* Debug */,
-				FB58BA1B2DF779A900607024 /* Release */,
+				FB58BA1A2DF779A900607024 /* Debug configuration for PBXNativeTarget "Simple Tca Navigation" */,
+				FB58BA1B2DF779A900607024 /* Release configuration for PBXNativeTarget "Simple Tca Navigation" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB58BA1C2DF77A7C00607024 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.20.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB58BA1D2DF77A7C00607024 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB58BA1C2DF77A7C00607024 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB58BA062DF779A800607024 /* Project object */;
 }

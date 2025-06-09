@@ -1,17 +1,14 @@
-//
-//  Simple_Tca_NavigationApp.swift
-//  Simple Tca Navigation
-//
-//  Created by dwi prasetyo on 10/06/25.
-//
-
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct Simple_Tca_NavigationApp: App {
+	
+	static let store = Store(initialState: ScreenAFeature.State(), reducer: { ScreenAFeature() })
+	
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ScreenA(store: Simple_Tca_NavigationApp.store)
         }
     }
 }
