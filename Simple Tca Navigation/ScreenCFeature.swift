@@ -11,7 +11,7 @@ struct ScreenCFeature {
 	
 	enum Action {
 		case navigateToAButtonTapped
-		case navigateToBButtonTapped
+		case navigateToBButtonTapped(String)
 	}
 	
 	var body: some ReducerOf<Self> {

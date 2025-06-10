@@ -9,6 +9,10 @@ struct ScreenBView: View {
 		VStack(spacing: 16) {
 			Text(store.text)
 			
+			if let args = store.args {
+				Text("Args: \(args)")
+			}
+			
 			Button("Go to C") {
 				store.send(.navigateToCButtonTapped)
 			}

@@ -44,8 +44,11 @@ struct ContentFeature {
 				state.path = StackState()
 				return .none
 				
-			case .path(.element(id: _, action: .screenC(.navigateToBButtonTapped))):
+			case .path(.element(id: _, action: .screenC(.navigateToBButtonTapped(let message)))):
 				_ = state.path.popLast()
+				if let lastId = state.path.ids.last {
+					return .send(.path(.element(id: lastId, action: .screenB(.receivedMessageFromC(message)))))
+				}
 				return .none
 				
 			case .path(.element(id: _, action: .screenD(.navigateToAButtonTapped))):

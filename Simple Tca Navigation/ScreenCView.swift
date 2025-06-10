@@ -10,7 +10,7 @@ struct ScreenCView: View {
 			Text(store.text)
 			Text("args \(store.ags)")
 			Button("Back to Screen B") {
-				store.send(.navigateToBButtonTapped)
+				store.send(.navigateToBButtonTapped("got some message"))
 			}
 			Button("Back to Screen A") {
 				store.send(.navigateToAButtonTapped)
