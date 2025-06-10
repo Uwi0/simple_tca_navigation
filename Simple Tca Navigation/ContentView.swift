@@ -1,17 +1,22 @@
 import SwiftUI
+import ComposableArchitecture
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
-
-#Preview {
-    ContentView()
+	
+	@Bindable var store: StoreOf<ContentFeature>
+	
+	var body: some View {
+		NavigationStack(path: $store.scope(state: \.path, action: \.path)) {
+			ScreenAView(store: store.scope(state: \.featureA, action: \.featureA))
+		} destination: { state in
+			switch state.case {
+			case .screenB(let store):
+				ScreenBView(store: store)
+			case .screenC(let store):
+				ScreenCView(store: store)
+			case .screenD(let store):
+				ScreenDView(store: store)
+			}
+		}
+	}
 }

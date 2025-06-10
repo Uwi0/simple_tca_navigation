@@ -1,7 +1,7 @@
 import SwiftUI
 import ComposableArchitecture
 
-struct ScreenB: View {
+struct ScreenBView: View {
 	
 	@Bindable var store: StoreOf<ScreenBFeature>
 	
@@ -10,14 +10,18 @@ struct ScreenB: View {
 			Text(store.text)
 			
 			Button("Go to C") {
-				store.send(.navigateToCTapped)
+				store.send(.navigateToCButtonTapped)
+			}
+			
+			Button("Go to D") {
+				store.send(.navigateToDButtonTapped)
 			}
 		}
 	}
 }
 
 #Preview {
-	ScreenB(store: Store(
+	ScreenBView(store: Store(
 		initialState: ScreenBFeature.State(),
 		reducer: { ScreenBFeature()})
 	)

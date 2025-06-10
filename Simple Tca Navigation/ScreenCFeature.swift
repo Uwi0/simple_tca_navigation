@@ -2,27 +2,26 @@ import Foundation
 import ComposableArchitecture
 
 @Reducer
-struct ScreenBFeature {
+struct ScreenCFeature {
 	@ObservableState
 	struct State: Equatable {
-		var text: String = "welcome to B screen"
+		let ags: String
+		var text:String = "Weclome to Screen C"
 	}
 	
-	
 	enum Action {
-		case navigateToCButtonTapped
-		case navigateToDButtonTapped
+		case navigateToAButtonTapped
+		case navigateToBButtonTapped
 	}
 	
 	var body: some ReducerOf<Self> {
 		Reduce { state, action in
 			switch action {
-			case .navigateToCButtonTapped:
+			case .navigateToAButtonTapped:
 				return .none
-			case .navigateToDButtonTapped:
+			case .navigateToBButtonTapped:
 				return .none
 			}
 		}
 	}
-	
 }
