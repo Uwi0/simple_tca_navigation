@@ -6,7 +6,7 @@ struct ContentView: View {
 	@Bindable var store: StoreOf<ContentFeature>
 	
 	var body: some View {
-		NavigationStackStore(store.scope(state: \.path, action: \.path)) {
+		NavigationStack(path: $store.scope(state: \.path, action: \.path)) {
 			ScreenAView(store: store.scope(state: \.featureA, action: \.featureA))
 		} destination: { state in
 			switch state.case {
